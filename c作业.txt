@@ -1,0 +1,165 @@
+1#include <stdio.h>
+int main(){
+    printf("Hello Nowcoder!");
+    return 0;
+}
+2
+#include <stdio.h>
+int main (){
+    int a;
+    scanf("%d",&a);
+    a; return 0;
+}
+3
+#include <stdio.h>
+
+int main() {
+    float a=0;
+    scanf("%f",&a);
+    printf("%.3f",a);
+    return 0;
+}
+
+4
+#include <stdio.h>
+
+int main() {
+    char a[10000];
+    scanf("%s",a);
+    printf("%s",a);
+    return 0;
+}
+5
+#include <stdio.h>
+int main(){
+int a;
+scanf("%d",&a);
+long b;
+scanf("%ld",&b);
+float c;
+scanf("%f",&c);
+char e[1000];
+scanf("%s",e);
+char str[10000000];
+scanf("%s",str);
+printf("%d\n",a);
+printf("%ld\n",b);
+printf("%.1f\n",c);
+
+printf("%s\n",e);
+printf("%s",str);
+
+
+
+
+
+
+}
+6
+
+
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    int c=a+b;
+
+    if(a>=0 && a<=1000){
+        if(b>=0&&b<=1000){
+            printf("%d",c);
+
+
+        }
+
+    }
+
+}
+
+
+7 疫情死亡率有点问题
+
+
+8带余数除法
+#include <stdio.h>
+
+int main() {
+    int a;
+    int b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+
+    int c=a/b;
+    int e=a%b;
+    
+    printf("%d ",c);
+    printf("%d",e);
+    return 0;
+}
+9整数个位
+
+#include <stdio.h>
+
+int main() {
+
+    int a;
+ 
+    scanf("%d",&a);
+    int b=a%10;
+    printf("%d",b);
+
+    return 0;
+}
+
+10整数十位
+
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    int b=a%100;
+    int c=b%10;
+    int e=(b-c)/10;
+    printf("%d",e);
+    return 0;
+}
+
+11平方根
+#include <stdio.h>
+
+int main() {
+ 
+    int c;
+    scanf("%d",&c);
+
+    int a=pow(c,0.5);
+    printf("%d",a);
+    
+    return 0;
+}
+
+12反向输出
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+
+    if(a>=1000 && a<=9999){
+        int qian = a / 1000;        //千位
+        int bai  = a / 100 % 10;    //百位
+        int shi  = a / 10 % 10;     //十位
+        int ge   = a % 10;          //个位
+
+        int fanshu = ge*1000 + shi*100 + bai*10 + qian;
+        printf("%04d", fanshu);
+    }
+    else {
+        printf("error");
+    }
+    return 0;
+}
+
+
