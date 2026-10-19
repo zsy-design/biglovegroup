@@ -1,0 +1,193 @@
+//1
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    int c=a+b;
+
+    if(a>=0 && a<=1000){
+        if(b>=0&&b<=1000){
+            printf("%d",c);
+
+
+        }
+
+    }
+
+}
+//2
+#include <stdio.h>
+
+int main() {
+   int a,b;
+   scanf("%d","%d",&a,&b);
+   float e=b/a;
+   printf("%f",e);
+    
+    return 0;
+}
+
+//3
+#include <stdio.h>
+
+int main() {
+    int a;
+    int b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+
+    int c=a/b;
+    int e=a%b;
+    
+    printf("%d ",c);
+    printf("%d",e);
+    return 0;
+}
+
+//3 
+#include <stdio.h>
+
+int main() {
+    int a;
+    int b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+
+    int c=a/b;
+    int e=a%b;
+    
+    printf("%d ",c);
+    printf("%d",e);
+    return 0;
+}
+
+//4
+
+#include <stdio.h>
+
+int main() {
+
+    int a;
+ 
+    scanf("%d",&a);
+    int b=a%10;
+    printf("%d",b);
+
+    return 0;
+}
+
+//5 
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    int b=a%100;
+    int c=b%10;
+    int e=(b-c)/10;
+    printf("%d",e);
+    return 0;
+}
+
+//6
+
+#include <stdio.h>
+
+int main() {
+ 
+    int c;
+    scanf("%d",&c);
+
+    int a=pow(c,0.5);
+    printf("%d",a);
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
