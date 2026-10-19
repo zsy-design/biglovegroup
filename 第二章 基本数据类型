@@ -1,0 +1,52 @@
+//1
+#include <stdio.h>
+int main (){
+    int a;
+    scanf("%d",&a);
+    a; return 0;
+}
+//2
+#include <stdio.h>
+
+int main() {
+    float a=0;
+    scanf("%f",&a);
+    printf("%.3f",a);
+    return 0;
+}
+//3
+#include <stdio.h>
+
+int main() {
+    char a[10000];
+    scanf("%s",a);
+    printf("%s",a);
+    return 0;
+}
+//4
+#include <stdio.h>
+int main(){
+int a;
+scanf("%d",&a);
+long b;
+scanf("%ld",&b);
+float c;
+scanf("%f",&c);
+char e[1000];
+scanf("%s",e);
+char str[10000000];
+scanf("%s",str);
+printf("%d\n",a);
+printf("%ld\n",b);
+printf("%.1f\n",c);
+
+printf("%s\n",e);
+printf("%s",str);
+  //
+
+
+
+
+
+
+}
