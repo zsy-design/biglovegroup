@@ -1,0 +1,90 @@
+//1
+#include <stdio.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    int b[1000];
+    b[0]=0;
+    b[1]=1;
+    b[2]=1;
+    for(int i=3;i<=a;i++){
+        b[i]=b[i-1]+2*b[i-2]+b[i-3];
+    }
+    printf("%d",b[a-1]);
+    return 0;
+}
+
+
+//2
+#include <math.h>
+#include <stdio.h>
+int b[100005];
+int main() {
+    int i=0;
+    int num=0;
+    for(int i=0;i<=100;i++){
+        scanf("%d",&b[i]);
+        num=num+1;
+        if(b[i]==0){
+            break;//输入的时候有0就给他剔除喽
+        }
+
+    }
+    for(int j=num-2;j>=0;j--){
+       
+            printf("%d ",b[j]);
+            
+        
+    }
+return 0;
+}
+//3
+
+/*#include <stdio.h>
+int b[100005];
+int main() {
+    int a;
+    scanf("%d",&a);
+    for(int i=0;i<a;i++){
+        scanf("%d",&b[i]);
+        
+    }
+    for(int j=0;j<a;j++){
+        if(b[j]>=b[j+1]){
+            b[j]=0;
+            printf("%d ",b[j]);
+        }
+        else{
+            printf("%d ",b[j]);
+        }
+
+    }
+
+    return 0;
+}*/
+#include <stdio.h>
+int b[100005]; 
+int main() {
+    int a;
+    scanf("%d", &a);
+    for(int i = 0; i < a; i++){
+        scanf("%d", &b[i]);
+    }
+    
+   
+    for(int j = 0; j < a; j++){
+        int count = 0; 
+        
+        
+        for(int k = 0; k < j; k++){
+            if(b[k] < b[j]){ 
+                count++;     
+            }
+        }
+        
+        printf("%d ", count); 
+    }
+
+    return 0;
+}//参考了下deepseek
