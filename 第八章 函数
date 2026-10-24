@@ -1,0 +1,89 @@
+//1
+
+#include <stdio.h>
+int jia(int a,int b){
+    scanf("%d""%d",&a,&b);
+    int c=a+b;
+    return c;
+}
+int  main(){
+    int m,n;
+    scanf("%d""%d",&m,&n);
+    int sum =jia(m,n);
+    printf("%d",sum);
+    return 0;
+
+}//我靠 我这个自己写半天运行不了，一看只写函数部分666
+//2
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ * 计算两个参数的乘积
+ * @param Number1 int整型 
+ * @param Number2 int整型 
+ * @return long长整型
+ */
+long long aTimesB(int num1, int num2 ) {
+    long long cheng=(long long) num1*num2;//这边的确没想到，长整型
+    return cheng;
+}
+
+//3
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ * 求非负整数 n 的平方根
+ * @param n int整型 你需要求 n 的平方根
+ * @return double浮点型
+ */
+double findSqrt(int n ) {
+    // write code here
+    return sqrt(n);
+}//直接带哦用函数
+
+//4 
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ * 判断二元一次方程组是否有解
+ * @param a int整型 二次项系数
+ * @param b int整型 一次项系数
+ * @param c int整型 常数项
+ * @return bool布尔型
+ */
+bool judgeSolutions(int a, int b, int c ) {
+    // write code here
+    int i;
+    int q=b*b-4*a*c;
+    if(q>=0){
+        int i=1;
+        return 1;
+    }
+    else{
+        return 0;
+    }
+ 
+
+}
+
+//5 
+
+
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ * 计算星球的第一宇宙速度
+ * @param M double浮点型 星球的质量
+ * @param r double浮点型 星球的半径
+ * @return double浮点型
+ */
+double firstSpeed(double M, double r ) {
+    // write code here
+
+    double G=6.67e-11;//我靠这个e-11我真忘了，
+    //v=G*M/r 推到
+    double v=sqrt(G*M/r);
+    return v;
+}
