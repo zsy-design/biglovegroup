@@ -22,6 +22,7 @@ int main() {
  
 
 //2
+斗兽棋，一个比较本的方法，把动物全部赋给字符串，if嵌套去挨个判断
 
 //3
 #include <stdio.h>
@@ -60,3 +61,35 @@ int main() {
    
     return 0;
 }
+//4
+
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char a[105];
+    int b=0;
+    scanf("%s",a);
+    int chang=strlen(a);
+    for(int i=0;i<=chang-3;i++){
+        char q=a[i];
+        char w=a[i+1];
+        char e=a[i+2];
+        if((q=='b'||q=='B')&& (w=='o'||w=='O') &&(e=='b'||e=='B')){//这边还要加括号,大小写要全包括
+            printf("%d",i);
+            b=1;//我当时没想到取一个b值来判断
+
+            break;
+
+        }
+
+    }
+    if(b==0){
+        printf("-1");
+    }
+    return 0;
+}
+
+//5
+这个确实有点。。。我思考
+//6
+我再看看哈
