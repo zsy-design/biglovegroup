@@ -92,3 +92,35 @@ int main() {
 
 
 //5
+
+
+
+
+
+
+
+//10
+#include <stdio.h>
+//本来打算用数组佳，但是题目没看清他不是一直从1到j，所以没办法这只能赋值赋，然后累加就行
+int main() {
+    int m,n;
+    scanf("%d" "%d",&m,&n);
+    int a[m][n];
+    long long  sum=0;
+  
+    for(int i=0;i<m;i++){
+
+        for(int j=0;j<n;j++){
+             a[i][j]=a[i][j-1]+1;//很巧妙的运用，赞美我自己
+             //printf("%d ",a[i][j]);
+             long long shu;
+             scanf("%lld",&shu);
+             sum=sum+shu;
+             
+        }
+        
+
+    }
+    printf("%lld",sum);
+    return 0;
+}
