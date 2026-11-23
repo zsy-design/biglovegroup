@@ -1,0 +1,15 @@
+project()：项目名称。
+add_executable()：把哪些 .cpp 编译成可执行程序。
+target_include_directories()：头文件目录。
+target_link_libraries()：链接哪些库。
+find_package()：寻找外部依赖。
+install()：把程序安装到哪里，ROS2 找不到节点时经常检查这里。
+在 ROS2 的 ament_cmake 功能包中，还要重点看：
+
+CMakeLists.txt：说明怎么编译、链接和安装。
+package.xml：说明这个包依赖哪些软件包。
+两边依赖要对应，否则容易出现编译通过但运行异常，或者直接找不到依赖。
+
+
+
+cmake要能看懂，ai帮助很大 毕竟不是编程语言。
